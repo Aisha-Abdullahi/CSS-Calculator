@@ -1,0 +1,100 @@
+.grid {
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "header header header header"
+        "add subtract multiply divide"
+        "seven eight nine ."
+    ;
+    width: 400px;
+    height: 500px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 0px;
+    margin: auto;
+}
+
+div {
+    border: 2px solid rgb(89, 135, 150);
+    text-align: center;
+    position: relative;
+}
+
+#result {
+    grid-area: header;
+    text-align: end;
+    font-size: 24px;
+    background: gray;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#subtract {
+    grid-area: subtract;
+    border-radius: 0;
+}
+
+#seven {
+    grid-area: seven;
+    border-radius: 0;
+}
+
+#eight {
+    grid-area: eight;
+    border-radius: 0;
+}
+
+#nine {
+    grid-area: nine;
+    border-radius: 0;
+}
+
+#equals {
+    grid-row: span 4;
+    border-radius: 0px 0px 10px 0px;
+    background-color: orangered;
+}
+
+#six {
+    border-radius: 0;
+}
+
+#five {
+    border-radius: 0;
+}
+
+#four {
+    border-radius: 0;
+}
+
+#three {
+    border-radius: 0;
+}
+
+#two {
+    border-radius: 0;
+}
+
+#one {
+    border-radius: 0;
+}
+
+#zero {
+    border-radius: 0px 0px 0px 10px;
+}
+
+#add {
+    grid-area: add;
+    border-radius: 0;
+}
+
+svg {
+    width: 20px;
+    color: black;
+}
+
+.operations {
+    background-color: lightblue;
+}
